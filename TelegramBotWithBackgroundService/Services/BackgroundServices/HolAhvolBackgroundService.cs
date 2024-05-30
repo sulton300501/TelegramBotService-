@@ -42,12 +42,12 @@ namespace TelegramBotWithBackgroundService.Bot.Services.BackgroundServices
             {
                 return _client.SendTextMessageAsync(
                     chatId: user.Id,
-                    text: "Yaxshimisiz aka? Bugun dammi yoki Bugun danmi?",
+                    text: "Message",
                     cancellationToken: token);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Qaysidir telba blockladi botni");
+                Console.WriteLine("Block");
                 return Task.CompletedTask;
             }
         }
